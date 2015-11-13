@@ -342,6 +342,11 @@ BOOL freerdp_shall_disconnect(freerdp* instance)
 	return instance->context->rdp->disconnect;
 }
 
+UINT32 freerdp_rdp_errorInfo(freerdp* instance)
+{
+	return instance->context->rdp->errorInfo;
+}
+
 FREERDP_API BOOL freerdp_focus_required(freerdp* instance)
 {
 	rdpRdp* rdp;
